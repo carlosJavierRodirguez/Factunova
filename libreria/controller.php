@@ -98,5 +98,13 @@ class controller
         $CustomerDptoCode = '11';
         $CustmerAddress = 'CARRERA 8 No 20-14/40';
         $CustomerNit = '900108281';
+        $CustomerIdCode = '31';
+
+        //metodos de pago
+
+        //1 para contado 2 para credito
+        $PaymentMeansID = '1';
+        //acaba la forma de pago si es efectivo, cheque, transferencia, etc
+        $PaymentMeansCode = '10';
     }
 }

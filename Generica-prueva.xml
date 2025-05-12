@@ -194,7 +194,7 @@
          <cac:PartyTaxScheme>
 
             <cbc:RegistrationName>$CustomerName</cbc:RegistrationName>
-            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="3" schemeName="31">$CustomerNit</cbc:CompanyID>
+            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="3" schemeName="$CustomerIdCode">$CustomerNit</cbc:CompanyID>
 
             <cac:RegistrationAddress>
 
@@ -204,7 +204,7 @@
                <cbc:CountrySubentityCode> $CustomerDptoCode</cbc:CountrySubentityCode>
 
                <cac:AddressLine>
-                  <cbc:Line> $CustmerAddress</cbc:Line>
+                  <cbc:Line> $CustomerAddress</cbc:Line>
                </cac:AddressLine>
 
                <cac:Country>
@@ -222,102 +222,18 @@
 
          <cac:PartyLegalEntity>
             <cbc:RegistrationName> $CustomerName</cbc:RegistrationName>
-            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="3" schemeName="31">$CustomerNit</cbc:CompanyID>
+            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="3" schemeName="$CustomerIdCode">$CustomerNit</cbc:CompanyID>
          </cac:PartyLegalEntity>
-
-         <cac:Contact>
-            <cbc:Name>Diana Cruz</cbc:Name>
-            <cbc:Telephone>31031031089</cbc:Telephone>
-            <cbc:ElectronicMail>dcruz@empresa.org</cbc:ElectronicMail>
-         </cac:Contact>
 
       </cac:Party>
 
    </cac:AccountingCustomerParty>
 
-
-
-   <cac:TaxRepresentativeParty>
-      <cac:PartyIdentification>
-         <cbc:ID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">989123123</cbc:ID>
-      </cac:PartyIdentification>
-   </cac:TaxRepresentativeParty>
-   <cac:Delivery>
-      <cac:DeliveryAddress>
-         <cbc:ID>11001</cbc:ID>
-         <cbc:CityName>Bogotá, D.c. </cbc:CityName>
-         <cbc:CountrySubentity>Bogotá, D.c. 11</cbc:CountrySubentity>
-         <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
-         <cac:AddressLine>
-            <cbc:Line>CARRERA 8 No 20-14/40</cbc:Line>
-         </cac:AddressLine>
-         <cac:Country>
-            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
-            <cbc:Name languageID="es">Colombia</cbc:Name>
-         </cac:Country>
-      </cac:DeliveryAddress>
-      <cac:DeliveryParty>
-         <cac:PartyName>
-            <cbc:Name>Empresa de transporte</cbc:Name>
-         </cac:PartyName>
-         <cac:PhysicalLocation>
-            <cac:Address>
-               <cbc:ID>11001</cbc:ID>
-               <cbc:CityName>Bogotá, D.c. </cbc:CityName>
-               <cbc:CountrySubentity>Bogotá</cbc:CountrySubentity>
-               <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
-               <cac:AddressLine>
-                  <cbc:Line>Av.  #17 - 193</cbc:Line>
-               </cac:AddressLine>
-               <cac:Country>
-                  <cbc:IdentificationCode>CO</cbc:IdentificationCode>
-                  <cbc:Name languageID="es">Colombia</cbc:Name>
-               </cac:Country>
-            </cac:Address>
-         </cac:PhysicalLocation>
-         <cac:PartyTaxScheme>
-            <cbc:RegistrationName>Empresa de transporte</cbc:RegistrationName>
-            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="1" schemeName="31">981223983</cbc:CompanyID>
-            <cbc:TaxLevelCode listName="04">O-99</cbc:TaxLevelCode>
-            <cac:TaxScheme>
-               <cbc:ID>01</cbc:ID>
-               <cbc:Name>IVA</cbc:Name>
-            </cac:TaxScheme>
-         </cac:PartyTaxScheme>
-         <cac:PartyLegalEntity>
-            <cbc:RegistrationName>Empresa de transporte</cbc:RegistrationName>
-            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="1" schemeName="31">981223983</cbc:CompanyID>
-            <cac:CorporateRegistrationScheme>
-               <cbc:Name>75433</cbc:Name>
-            </cac:CorporateRegistrationScheme>
-         </cac:PartyLegalEntity>
-         <cac:Contact>
-            <cbc:Name>Eric Van Boxsom</cbc:Name>
-            <cbc:Telephone>9712311</cbc:Telephone>
-            <cbc:Telefax>12431241</cbc:Telefax>
-            <cbc:ElectronicMail>eric.vanboxsom@gosocket.net</cbc:ElectronicMail>
-            <cbc:Note>Test descripcion contacto</cbc:Note>
-         </cac:Contact>
-      </cac:DeliveryParty>
-   </cac:Delivery>
-   <cac:DeliveryTerms>
-      <cbc:SpecialTerms>Portes Pagados</cbc:SpecialTerms>
-      <cbc:LossRiskResponsibilityCode>CFR</cbc:LossRiskResponsibilityCode>
-      <cbc:LossRisk>Costo y Flete</cbc:LossRisk>
-   </cac:DeliveryTerms>
    <cac:PaymentMeans>
-      <cbc:ID>2</cbc:ID>
-      <cbc:PaymentMeansCode>41</cbc:PaymentMeansCode>
-      <cbc:PaymentDueDate>2019-06-30</cbc:PaymentDueDate>
-      <cbc:PaymentID>1234</cbc:PaymentID>
+      <cbc:ID>$PaymentMeansID</cbc:ID>
+      <cbc:PaymentMeansCode>$PaymentMeansCode</cbc:PaymentMeansCode>
    </cac:PaymentMeans>
-   <cac:PrepaidPayment>
-      <cbc:ID>SFR3123856</cbc:ID>
-      <cbc:PaidAmount currencyID="COP">1000.00</cbc:PaidAmount>
-      <cbc:ReceivedDate>2018-09-29</cbc:ReceivedDate>
-      <cbc:PaidDate>2018-09-29</cbc:PaidDate>
-      <cbc:InstructionID>Prepago recibido</cbc:InstructionID>
-   </cac:PrepaidPayment>
+
    <cac:TaxTotal>
       <cbc:TaxAmount currencyID="COP">2424.01</cbc:TaxAmount>
       <cac:TaxSubtotal>
@@ -343,6 +259,7 @@
          </cac:TaxCategory>
       </cac:TaxSubtotal>
    </cac:TaxTotal>
+
    <cac:TaxTotal>
       <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
       <cac:TaxSubtotal>
@@ -357,6 +274,7 @@
          </cac:TaxCategory>
       </cac:TaxSubtotal>
    </cac:TaxTotal>
+
    <cac:TaxTotal>
       <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
       <cac:TaxSubtotal>
