@@ -106,5 +106,22 @@ class controller
         $PaymentMeansID = '1';
         //acaba la forma de pago si es efectivo, cheque, transferencia, etc
         $PaymentMeansCode = '10';
+        //total de la factura antes del iva
+        $TaxableAmount = '';
+        $TaxAmount = '';
+        //porcentaje de iva
+        $Percent = '19';
+        //total de la suma de los precios de los productos
+        $LineExtensionAmount = '';
+
+        //valor antes del iva
+        $TaxExclusiveAmount = '';
+        //total de la factura con el iva
+        $TaxInclusiveAmount = '';
+
+        //id del producto este debe ir aumentando dependiento de cuantos productos hay
+        $LineID = '1';
+        //numero de productos
+        $LineQty = '2';
     }
 }

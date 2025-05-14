@@ -235,76 +235,42 @@
    </cac:PaymentMeans>
 
    <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="COP">2424.01</cbc:TaxAmount>
+
       <cac:TaxSubtotal>
-         <cbc:TaxableAmount currencyID="COP">12600.06</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="COP">2394.01</cbc:TaxAmount>
+
+         <cbc:TaxableAmount currencyID="COP">$TaxableAmount</cbc:TaxableAmount>
+
          <cac:TaxCategory>
-            <cbc:Percent>19.00</cbc:Percent>
+            <cbc:Percent>$Percent</cbc:Percent>
+
             <cac:TaxScheme>
                <cbc:ID>01</cbc:ID>
                <cbc:Name>IVA</cbc:Name>
             </cac:TaxScheme>
          </cac:TaxCategory>
-      </cac:TaxSubtotal>
-      <cac:TaxSubtotal>
-         <cbc:TaxableAmount currencyID="COP">187.50</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="COP">30.00</cbc:TaxAmount>
-         <cac:TaxCategory>
-            <cbc:Percent>16.00</cbc:Percent>
-            <cac:TaxScheme>
-               <cbc:ID>01</cbc:ID>
-               <cbc:Name>IVA</cbc:Name>
-            </cac:TaxScheme>
-         </cac:TaxCategory>
-      </cac:TaxSubtotal>
-   </cac:TaxTotal>
 
-   <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
-      <cac:TaxSubtotal>
-         <cbc:TaxableAmount currencyID="COP">0.00</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
-         <cac:TaxCategory>
-            <cbc:Percent>0.000</cbc:Percent>
-            <cac:TaxScheme>
-               <cbc:ID>03</cbc:ID>
-               <cbc:Name>ICA</cbc:Name>
-            </cac:TaxScheme>
-         </cac:TaxCategory>
+         <cbc:TaxAmount currencyID="COP">$TaxAmount</cbc:TaxAmount>
       </cac:TaxSubtotal>
-   </cac:TaxTotal>
 
-   <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
-      <cac:TaxSubtotal>
-         <cbc:TaxableAmount currencyID="COP">0.00</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
-         <cac:TaxCategory>
-            <cbc:Percent>0.00</cbc:Percent>
-            <cac:TaxScheme>
-               <cbc:ID>04</cbc:ID>
-               <cbc:Name>INC</cbc:Name>
-            </cac:TaxScheme>
-         </cac:TaxCategory>
-      </cac:TaxSubtotal>
-   </cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">$TaxAmount</cbc:TaxAmount>
 
+   </cac:TaxTotal>
 
    <cac:LegalMonetaryTotal>
-      <cbc:LineExtensionAmount currencyID="COP">12600.06</cbc:LineExtensionAmount>
-      <cbc:TaxExclusiveAmount currencyID="COP">12787.56</cbc:TaxExclusiveAmount>
-      <cbc:TaxInclusiveAmount currencyID="COP">15024.07</cbc:TaxInclusiveAmount>
-      <cbc:PrepaidAmount currencyID="COP">1000.00</cbc:PrepaidAmount>
-      <cbc:PayableAmount currencyID="COP">14024.07</cbc:PayableAmount>
+      <cbc:LineExtensionAmount currencyID="COP">$LineExtensionAmount</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="COP"> $TaxExclusiveAmount</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="COP">$TaxInclusiveAmount</cbc:TaxInclusiveAmount>
+      <cbc:PayableAmount currencyID="COP">$TaxInclusiveAmount</cbc:PayableAmount>
    </cac:LegalMonetaryTotal>
 
 
    <cac:InvoiceLine>
-      <cbc:ID>1</cbc:ID>
-      <cbc:InvoicedQuantity unitCode="EA">1.000000</cbc:InvoicedQuantity>
+      <cbc:ID>$LineID= 1</cbc:ID>
+      <cbc:InvoicedQuantity unitCode="EA">$LineQty =2</cbc:InvoicedQuantity>
+
       <cbc:LineExtensionAmount currencyID="COP">12600.06</cbc:LineExtensionAmount>
       <cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+
       <cac:Delivery>
          <cac:DeliveryLocation>
             <cbc:ID schemeID="999" schemeName="EAN">613124312412</cbc:ID>
@@ -346,60 +312,5 @@
          <cbc:BaseQuantity unitCode="EA">1.000000</cbc:BaseQuantity>
       </cac:Price>
    </cac:InvoiceLine>
-   <cac:InvoiceLine>
-      <cbc:ID>2</cbc:ID>
-      <cbc:InvoicedQuantity unitCode="NIU">1.000000</cbc:InvoicedQuantity>
-      <cbc:LineExtensionAmount currencyID="COP">0.00</cbc:LineExtensionAmount>
-      <cbc:FreeOfChargeIndicator>true</cbc:FreeOfChargeIndicator>
-      <cac:DocumentReference>
-         <cbc:ID>TST1543623</cbc:ID>
-         <cbc:IssueDate>2019-03-02</cbc:IssueDate>
-         <cbc:DocumentTypeCode>1001-A</cbc:DocumentTypeCode>
-         <cbc:DocumentType>Bienes Propios</cbc:DocumentType>
-      </cac:DocumentReference>
-      <cac:DocumentReference>
-         <cbc:ID>GR8713461</cbc:ID>
-         <cbc:IssueDate>2019-03-02</cbc:IssueDate>
-         <cbc:DocumentTypeCode>AR</cbc:DocumentTypeCode>
-      </cac:DocumentReference>
-      <cac:PricingReference>
-         <cac:AlternativeConditionPrice>
-            <cbc:PriceAmount currencyID="COP">100.00</cbc:PriceAmount>
-            <cbc:PriceTypeCode>03</cbc:PriceTypeCode>
-            <cbc:PriceType>Otro valor</cbc:PriceType>
-         </cac:AlternativeConditionPrice>
-      </cac:PricingReference>
-      <cac:Delivery>
-         <cac:DeliveryLocation>
-            <cbc:ID schemeID="999" schemeName="EAN">613124312412</cbc:ID>
-         </cac:DeliveryLocation>
-      </cac:Delivery>
-      <cac:TaxTotal>
-         <cbc:TaxAmount currencyID="COP">30.00</cbc:TaxAmount>
-         <cac:TaxSubtotal>
-            <cbc:TaxableAmount currencyID="COP">187.50</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="COP">30.00</cbc:TaxAmount>
-            <cac:TaxCategory>
-               <cbc:Percent>16.00</cbc:Percent>
-               <cac:TaxScheme>
-                  <cbc:ID>01</cbc:ID>
-                  <cbc:Name>IVA</cbc:Name>
-               </cac:TaxScheme>
-            </cac:TaxCategory>
-         </cac:TaxSubtotal>
-      </cac:TaxTotal>
-      <cac:Item>
-         <cbc:Description>Bolsa</cbc:Description>
-         <cac:SellersItemIdentification>
-            <cbc:ID>91412012412</cbc:ID>
-         </cac:SellersItemIdentification>
-         <cac:StandardItemIdentification>
-            <cbc:ID schemeAgencyID="10" schemeID="001" schemeName="UNSPSC">18937100-7</cbc:ID>
-         </cac:StandardItemIdentification>
-      </cac:Item>
-      <cac:Price>
-         <cbc:PriceAmount currencyID="COP">0.00</cbc:PriceAmount>
-         <cbc:BaseQuantity unitCode="NIU">1.000000</cbc:BaseQuantity>
-      </cac:Price>
-   </cac:InvoiceLine>
+
 </Invoice>
